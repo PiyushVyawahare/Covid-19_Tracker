@@ -3,7 +3,7 @@
 <h4 align="left">In this app you can view Covid-19 status of your district/city meaning active, confirmed, deceased and recovered cases of covid-19 in your district/city.</h4>
 <p align="left">The data provided in this app is from <a href="https://data.covid19india.org/state_district_wise.json">https://data.covid19india.org/state_district_wise.json</a></p>
 <h4 align="left">When you open Covid-19 Tracker app you will see main screen(activity) of app as follows:</h4>
-
+<img align="center" src="https://github.com/PiyushVyawahare/Covid-19_Tracker/blob/master/Screenshot_2021_08_20_18_40_52_882_com_example_covid_19tracker.jpg" alt="main" height="780" width="360"/>
 
 <img align="center" src="https://github.com/PiyushVyawahare/PiyushVyawahare/blob/main/PRANAV%20KONDE%20(1).jpg" alt="piyush" height="350" width=100%/>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=PiyushVyawahare&label=Profile%20views&color=0e75b6&style=flat" alt="profileviews" /> </p>
