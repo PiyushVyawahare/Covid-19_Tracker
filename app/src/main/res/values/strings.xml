@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+    <string name="letsgrowmore">LetsGrowMore</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="select_your_state">Select Your State</string>
+    <string name="select_your_city">Select Your City</string>
+    <string name="go">Go</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="hello">hello</string>
+    <string name="state">state</string>
+    <string name="district">district</string>
+    <string name="active">Active</string>
+    <string name="_1234">1234</string>
+    <string name="deceased">Deceased</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="delta">Delta</string>
+    <string name="recovered">Recovered</string>
+    <string-array name="States">
+        <item>Select</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Delhi</item>
+        <item>Dadra and Nagar Haveli and Daman and Diu</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Himachal Pradesh</item>
+        <item>Haryana</item>
+        <item>Jharkhand</item>
+        <item>Jammu and Kashmir</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Ladakh"</item>
+        <item>Lakshadweep</item>
+        <item>Maharashtra</item>
+        <item>Meghalaya</item>
+        <item>Manipur</item>
+        <item>Madhya Pradesh</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Puducherry</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Telangana</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+</resources>

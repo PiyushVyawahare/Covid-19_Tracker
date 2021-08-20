@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CovidData">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp"
+        app:cardElevation="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout tools:ignore="ExtraText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/districtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/district"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_horizontal" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/stateName"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:text="@string/state"-->
+            <!--                android:textColor="@color/blue"-->
+            <!--                android:textSize="20sp"-->
+            <!--                android:textAlignment="textEnd"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                app:layout_constraintLeft_toRightOf="@+id/districtName"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                android:gravity="end" />-->
+
+            <TextView
+                android:id="@+id/active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/active"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/activeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/_1234"
+                android:textSize="30dp"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/active" />
+            <TextView
+                android:id="@+id/recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/recovered"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/recoveredNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/_1234"
+                android:textColor="@color/green"
+                android:textSize="30dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recovered" />
+            <TextView
+                android:id="@+id/deceased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/deceased"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activeNumber" />
+
+            <TextView
+                android:id="@+id/deceasedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/_1234"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deceased" />
+            <TextView
+                android:id="@+id/confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/confirmed"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recoveredNumber" />
+
+            <TextView
+                android:id="@+id/confirmedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/_1234"
+                android:textSize="30dp"
+                android:textColor="@color/red"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirmed" />
+
+            <TextView
+                android:id="@+id/delta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delta"
+                tools:layout_editor_absoluteX="159dp"
+                tools:layout_editor_absoluteY="119dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/deceasedNumber"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/purple_200" />
+            <TextView
+                android:id="@+id/confirmedDelta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmed"
+                app:layout_constraintTop_toBottomOf="@id/delta"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/deceasedDelta"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/deceasedDelta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/deceased"
+                app:layout_constraintTop_toBottomOf="@id/delta"
+                android:layout_marginTop="30dp"
+                app:layout_constraintRight_toLeftOf="@id/recoveredDelta"
+                app:layout_constraintLeft_toRightOf="@id/confirmedDelta"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/recoveredDelta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/recovered"
+                app:layout_constraintTop_toBottomOf="@id/delta"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toRightOf="@id/deceasedDelta"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/confirmedDeltaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/_1234"
+                android:textColor="@color/red"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/confirmedDelta"
+                app:layout_constraintRight_toRightOf="@id/confirmedDelta"
+                app:layout_constraintTop_toBottomOf="@id/confirmedDelta" />
+
+            <TextView
+                android:id="@+id/deceasedDeltaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/_1234"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/deceasedDelta"
+                app:layout_constraintRight_toRightOf="@id/deceasedDelta"
+                app:layout_constraintTop_toBottomOf="@id/deceasedDelta" />
+            <TextView
+                android:id="@+id/recoveredDeltaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1234"
+                app:layout_constraintTop_toBottomOf="@id/recoveredDelta"
+                app:layout_constraintLeft_toLeftOf="@id/recoveredDelta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:textColor="@color/green"
+                app:layout_constraintRight_toRightOf="@id/recoveredDelta"
+                android:layout_marginBottom="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
