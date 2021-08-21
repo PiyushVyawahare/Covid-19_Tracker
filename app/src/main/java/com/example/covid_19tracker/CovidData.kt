@@ -21,10 +21,7 @@ class CovidData : AppCompatActivity() {
     }
 
     private fun fetcdata() {
-        var mactive: Int = 1
-        var mrecovered: Int = 1
-        var mdeceased: Int = 1
-        var mconfirmed: Int = 1
+
 
         val state = intent.getStringExtra(STATE_EXTRA)
         val district = intent.getStringExtra(DISTRICT_EXTRA)
@@ -48,17 +45,17 @@ class CovidData : AppCompatActivity() {
                 val stateJsonObject = it.getJSONObject(state)
                 val districtJsonObject = stateJsonObject.getJSONObject("districtData")
                 val cityJsonObject = districtJsonObject.getJSONObject(district)
-                mactive = cityJsonObject.getInt("active")
+                var mactive = cityJsonObject.getInt("active")
                 activeNumber.setText(mactive.toString())
 
 
-                mconfirmed = cityJsonObject.getInt("confirmed")
+                var mconfirmed = cityJsonObject.getInt("confirmed")
                 confirmedNumber.setText(mconfirmed.toString())
 
-                mdeceased = cityJsonObject.getInt("deceased")
+                var mdeceased = cityJsonObject.getInt("deceased")
                 deceasedNumber.setText(mdeceased.toString())
 
-                mrecovered = cityJsonObject.getInt("recovered")
+                var mrecovered = cityJsonObject.getInt("recovered")
                 recoveredNumber.setText(mrecovered.toString())
 
                 val deltaJsonObject = cityJsonObject.getJSONObject("delta")
