@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         val states = resources.getStringArray(R.array.States)
         val spinner = findViewById<Spinner>(R.id.spinner)
-        val districtSpinner = findViewById<Spinner>(R.id.districtSpinner)
         if ( spinner != null){
             val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, states)
             spinner.adapter = adapter
