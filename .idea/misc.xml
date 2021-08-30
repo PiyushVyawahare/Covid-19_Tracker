@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/drawable/gradient_spinner.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/layout/activity_covid_data.xml" value="0.1796875" />
+        <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/layout/activity_covid_data.xml" value="0.22" />
         <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/piyus/AndroidStudioProjects/Covid19Tracker2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17962962962962964" />
       </map>
     </option>
   </component>
